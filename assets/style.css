@@ -629,3 +629,107 @@ body {
         max-width: 100%;
     }
 }
+
+/* bread crumb css */
+.breadcrumb-section {
+    position: relative;
+    height: 300px;
+    /* adjust height as needed */
+    background-image: url("./img/Moringa_Powder.webp");
+    /* change your image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.breadcrumb-section .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    /* dark opacity */
+}
+
+.page-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.breadcrumb {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: #fff;
+}
+
+
+
+/* css design */
+.product-section {
+    background: #f9fdf9;
+}
+
+.section-title {
+    font-weight: 700;
+    color: #2d6a4f;
+}
+
+.section-subtitle {
+    color: #6c757d;
+    font-size: 15px;
+}
+
+.product-card {
+    background: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-img {
+    max-width: 90%;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.product-img:hover {
+    transform: scale(1.05);
+}
+
+.product-title {
+    color: #1b4332;
+    font-weight: 600;
+}
+
+.product-desc {
+    color: #555;
+    line-height: 1.7;
+}
+
+.product-features {
+    padding-left: 0;
+    list-style: none;
+}
+
+.product-features li {
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.product-features li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #2d6a4f;
+    font-weight: bold;
+}
